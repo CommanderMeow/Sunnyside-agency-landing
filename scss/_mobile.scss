@@ -1,0 +1,172 @@
+@media only screen and (max-width: 700px) {
+
+
+h1 {
+  font-size: 2.3em;
+  margin:20px;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.7em;
+}
+h4{
+  font-size: 1em;
+}
+ p{
+   font-size: 0.9em;
+ }
+
+.header{
+  background-image: url("/images/mobile/image-header.jpg");
+  height: 500px;
+  h1{
+    margin-top:0;
+  }
+}
+.navigation {
+  position: relative;
+  padding: 30px;
+  ul {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    color: $darkgreyblue;
+    left:0;
+    right: 0;
+    top:70px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 0;
+
+    }
+    ul:after {
+      content: "";
+        position: absolute;
+        right:0;
+        top:-30px;
+        width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent $white transparent;
+      }
+  li{
+    display: block;
+    margin: 30px;
+  }
+  button {
+    background-color: $yellow;
+  }
+}
+
+
+
+.hamburger{
+  display: block;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.main_box-text {
+  text-align: center;
+  width:80%;
+  margin: 50px 0 70px;
+
+}
+.main_box1 {
+  order: 2;
+}
+.main_box2 {
+  order:1;
+}
+.main_box3{
+  order:3;
+}
+.main_box4{
+  order: 4;
+}
+.main_box5{
+  order: 5;
+  .desktop {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
+.main_box-design-text {
+  p {
+    width: 90%;
+
+  }
+}
+.main_box6{
+  order:6;
+  .desktop {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
+
+.testimonials{
+  order: 7;
+  h4 {
+    margin-top: 50px;
+  }
+}
+.testimonial_container{
+  flex-direction: column;
+}
+.testimonial_box{
+ margin-bottom: 30px;
+
+ p{
+   margin-bottom: 30px;
+ }
+}
+.main_box-gallery{
+  order: 8;
+  flex-direction: row;
+  img {
+    flex-basis: 50%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+footer {
+  order: 9;
+  padding-top: 40px;
+  ul {
+    width:auto;
+  }
+
+  .footer_links{
+    width: 80%;
+  }
+  .footer_social-icons{
+    width: 50%;
+  }
+}
+
+
+}
