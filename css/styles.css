@@ -282,7 +282,7 @@ footer {
   p {
     font-size: 0.9em; }
   .header {
-    background-image: url("/images/mobile/image-header.jpg");
+    background-image: url("../images/mobile/image-header.jpg");
     height: 500px; }
     .header h1 {
       margin-top: 0; }
